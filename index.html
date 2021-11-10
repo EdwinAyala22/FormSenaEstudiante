@@ -21,20 +21,20 @@
     </nav>
 
   <!--FORMULARIO-->
-  <div class="container m-5" id="container">
-    <form id="form">
+  <div class="container  w-100" id="container">
+    <form id="form" action="requireValue()" method="post" >
         <div class="row">
-          <div class="col-4">
+          <div class="col-md-6">
             <label for="InputNombre" class="form-label" >Nombre:</label>
-            <input type="text" class="form-control" id="InputNombre" placeholder="Escriba su nombre...">
+            <input type="text" name="Username" class="form-control" id="Input5mbre" placeholder="Escriba su nombre...">
           </div>
-          <div class="col-4">
+          <div class="col-md-6">
             <label for="InputApellido" class="form-label" >Apellido:</label>
             <input type="text" class="form-control" id="InputApellido" placeholder="Escriba su apellido...">
           </div>
         </div>
         <div class="row">
-          <div class="col-4">
+          <div class="col-md-6">
             <label for="tipoDocumento">Tipo de documento</label>
             <select class="form-control" id="tipoDocumento">
               <option>Seleccione el tipo de documento...</option>
@@ -46,19 +46,19 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-4">
+          <div class="col-md-6">
             <label for="InputDoc" class="form-label" >Documento:</label>
             <input type="text" class="form-control" id="InputDoc" placeholder="123456789">
           </div>
         </div>
         <div class="row">
-          <div class="col-4">
+          <div class="col-md-12">
             <label for="InputCorreo" class="form-label">Correo electrónico:</label>
             <input type="email" class="form-control" id="InputCorreo" placeholder="name@example.com">
           </div>
         </div>
         <div class="row">
-          <div class="col-8">
+          <div class="col-md-12">
             <label for="textarea" class="form-label">Observaciones:</label>
             <textarea class="form-control" id="textarea" rows="5"></textarea>
           </div>
@@ -71,7 +71,7 @@
   </div>
   
   </form>
-  
+    <script src="assets/js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
         crossorigin="anonymous"></script>
