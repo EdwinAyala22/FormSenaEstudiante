@@ -1,16 +1,11 @@
-let form = document.getElementById('form');
-let name = form.elements[0];
-let username = name.value;
+const formStudent = document.getElementById('form-student');
+var correo = document.getElementById('correo').value;
+formStudent.addEventListener('submit', e =>{
+    e.preventDefault();
+    const nombre = formStudent['nombre'].value;
+    const apellido = formStudent['apellido'].value;
+    const tipoDoc = formStudent['tDoc'].value;
+    const documento = formStudent['documento'].value;
 
-function requireValue(input) {
-    return !(input.value.trim() === '');
-}
-// Event listener to perform the validation when user clicks on submit button
-form.addEventListener('submit', (event) => {
-    requiredFields.forEach((input) => {
-        valid = valid|requireValue(input.input);
-    });
-    if (!valid) {
-        event.preventDefault();
-    }
-});
+    console.log(nombre, apellido, tipoDoc, documento);
+})

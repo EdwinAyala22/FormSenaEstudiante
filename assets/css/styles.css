@@ -1,8 +1,27 @@
-
-.section-title{
-    margin: 5%;
+* {
+    box-sizing: border-box;
 }
 
-#form .row{ 
-    margin: 16px;
+.container{
+    width: 500px;
+    max-width: 100%;
+    margin: auto;
+    padding: 20px;
+    position: relative;
+}
+.section-title{
+    margin: 2%;
+}
+.card{
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
+}
+body{
+    background-color: rgb(233, 113, 16);
+}
+h1{
+    font-weight: bold;
+}
+.form-label{
+    font-size: 1.1em;
+    font-weight: bold;
 }
