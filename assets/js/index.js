@@ -6,6 +6,8 @@ formStudent.addEventListener('submit', e =>{
     const apellido = formStudent['apellido'].value;
     const tipoDoc = formStudent['tDoc'].value;
     const documento = formStudent['documento'].value;
+    const correo = formStudent['correo'].value;
+    const obs = formStudent['textarea'].value;
 
-    console.log(nombre, apellido, tipoDoc, documento);
+    console.log(nombre, apellido, tipoDoc, documento, correo, obs);
 })
